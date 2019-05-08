@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+}
+
+h1 {
+  background-color: #5b7989;
+  font-family: helvetica;
+  text-align: right;
+  color: white !important;
+  text-shadow: 2px 2px #02010a;
+  border-radius: 10px;
+  display:block;
+}
+
+Img1{
+  align-items: center;
+  background-image: : #82c3a6;
+  color:#82c3a6;
+  box-shadow: 2px 2px #02010a;
+  margin:10px auto;
+	display:block;
+}
+
+contenido{
+  margin:10px auto;
+  display:block;
+  max-width: 900px;
+}
+
+@media screen and (max-width:900px) {
+  /* resolucion mayor a 900px destokp */
+}
+@media screen and (min-width:900px) {
+  /* resolucion menor a 900px movil */
+}
