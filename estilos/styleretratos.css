@@ -37,34 +37,47 @@ h1{
   color: white !important;
 
 }
-
 .img_principal{
   overflow: hidden;
-  padding: 5px 10px;
-  padding: 5px 10px;
-  background-color: #82c3a6;
-  border: 2px solid #02010a;
-  white: 40%;
+  background-color: #d5c75f ;
 }
-
 .img_secundaria{
   overflow: hidden;
   padding: 5px 10px;
   background-color: #d5c75f ;
-  border: 1px solid ;
 }
-
-div #derecha{
-  width: 40%;
-  padding: 5px 10px;
+div #contenido{
+  margin:10px auto;
+  max-width: 900px;
+  background-color: #82c3a6;
+}
+.img_principal  #derecha{
+  width: 30%;
   float: right;
   background-color: #d5c75f ;
-
 }
-
-div #izquierda{
-  width: 40%;
-  padding: 5px 10px;
+.img_principal  #centro{
+  width: 30%;
+  float: right;
+  background-color: #d5c75f ;
+}
+.img_principal  #izquierda{
+  width: 30%;
+  float: right;
+  background-color: #d5c75f ;
+}
+.img_secundaria  #derecha{
+  width: 30%;
+  float: right;
+  background-color: #d5c75f ;
+}
+.img_secundaria  #centro{
+  width: 30%;
+  float: right;
+  background-color: #d5c75f ;
+}
+.img_secundaria  #izquierda{
+  width: 30%;
   float: right;
   background-color: #d5c75f ;
 }
@@ -75,12 +88,6 @@ div #izquierda{
 
 .img_secundaria img{
     margin: 10px auto;
-}
-
-div #contenido{
-  margin:10px auto;
-  max-width: 900px;
-  background-color: #82c3a6;
 }
 
 @media screen and (max-width:900px) {
@@ -108,7 +115,6 @@ footer>div:nth-child(2) {
 float: left;
 }
 
-
 .pagina_pie .title {
 padding-bottom: 5px;
 font-weight: bold;
@@ -126,19 +132,6 @@ margin: 0px;
 padding-top: 15px;
 padding-left: 100px;
 text-align: left;
-}
-
-div #derecha img {
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
-}
-div #derecha img:hover {
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-}
-
-div #izquierda img{
-  transform: translate(20px, 5px);
 }
 
 .menu{
