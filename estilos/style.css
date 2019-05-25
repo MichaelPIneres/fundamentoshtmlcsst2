@@ -1,34 +1,58 @@
 body{
   background-color: black;
+
 }
 
-h1 {
-  background-color: #5b7989;
-  font-family: helvetica;
-  text-align: right;
+.emcabezado {
   color: white !important;
-  text-shadow: 2px 2px #02010a;
-  border-radius: 10px;
-  display:block;
+  padding: 3px 10px;
+	border-radius: 10px;
+	background: -webkit-linear-gradient(right, #5b7989 , #5b7989);
+	background: -o-linear-gradient(right, #5b7989 , #5b7989);
+	background: -moz-linear-gradient(right, #5b7989 , #5b7989);
+	background: linear-gradient(to right, #5b7989 , #5b7989);
 }
 
-Img1{
+.img_principal{
+  padding: 5px 10px;
   align-items: center;
-  background-image: : #82c3a6;
-  color:#82c3a6;
-  box-shadow: 2px 2px #02010a;
   margin:10px auto;
 	display:block;
+  background-color: #82c3a6;
+  border: 2px solid #02010a;
 }
 
-contenido{
+.img_secundaria{
+  padding: 5px 10px;
+  align-items: center;
   margin:10px auto;
-  display:block;
+	display:block;
+  background-color: #d5c75f ;
+  border: 1px solid ;
+}
+
+div #derecha{
+  width: 40%;
+  float: left;
+  background-color: #d5c75f ;
+}
+
+div #izquierda{
+  width: 40%;
+  float: right;
+  background-color: #d5c75f ;
+}
+
+
+div #contenido{
+  margin:10px auto;
   max-width: 900px;
+  background-color: #82c3a6;
 }
 
 @media screen and (max-width:900px) {
   /* resolucion mayor a 900px destokp */
+
 }
 @media screen and (min-width:900px) {
   /* resolucion menor a 900px movil */
