@@ -85,10 +85,29 @@ div #contenido{
 
 @media screen and (max-width:900px) {
   /* resolucion mayor a 900px destokp */
-
+  .img_secundaria img {
+    flex: 100% !important;
+    max-width: 100% !important;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  #div derecha{
+    flex: 100% !important;
+    max-width: 100% !important;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  #div izquierda{
+    flex: 100% !important;
+    max-width: 100% !important;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
 }
+
 @media screen and (min-width:900px) {
   /* resolucion menor a 900px movil */
+
 }
 
 .pagina_pie {

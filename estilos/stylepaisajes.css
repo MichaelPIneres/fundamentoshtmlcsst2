@@ -1,5 +1,18 @@
 body{
   background-color: black;
+  position: relative;
+  animation-name: movimiento;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+/* Standard syntax */
+@keyframes movimiento {
+  0%   {top:0px;}
+  25%  {top:0px;}
+  50%  {top:200px;}
+  75%  {top:200px;}
+  100% {top:0px;}
 }
 
 @font-face {
@@ -88,6 +101,38 @@ div #contenido{
 
 .img_secundaria img{
     margin: 10px auto;
+}
+
+/*APLICACION DE EFECTO A IMAGENES POR COLORES*/
+.img_principal #img1 { filter: blur(10px);}
+.img_principal #img2 {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.img_principal #img3 {
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+}
+.img_secundaria #img4 {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img_secundaria #img6 {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 @media screen and (max-width:900px) {
