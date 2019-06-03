@@ -1,4 +1,12 @@
-body{
+
+@font-face {
+font-family: 'Dancing Script', cursive;
+font-style: normal;
+font-weight: normal;
+src: url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+}
+
+body {
   background-color: black;
   position: relative;
   animation-name: movimiento;
@@ -15,14 +23,21 @@ body{
   100% {top:0px;}
 }
 
-@font-face {
-font-family: 'Dancing Script', cursive;
-font-style: normal;
-font-weight: normal;
-src: url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+div #contenido{
+margin:10px auto;
+max-width: 900px;
+background-color: #82c3a6;
 }
 
-.emcabezado {
+h1{
+  color: white !important;
+  text-align: left;
+  font-size: 40px;
+  font-family: letra1;
+}
+
+.header {
+  text-align: center;
   color: white !important;
   padding: 3px 10px;
 	border-radius: 10px;
@@ -33,14 +48,7 @@ src: url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 	background: linear-gradient(to right, #5b7989 , #5b7989);
 }
 
-h1{
-  color: white !important;
-  text-align: left;
-  font-size: 40px;
-  font-family: letra1;
-}
-
-.emcabezado a{
+.header a{
   color: white !important;
 }
 
@@ -48,105 +56,156 @@ h1{
 	text-align: right;
   font-size: 20px;
   color: white !important;
+}
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
-.img_principal{
-  overflow: hidden;
-  background-color: #d5c75f ;
+
+.column {
+  flex: 50%;
+  max-width: 100%;
+  padding: 0 4px;
 }
-.img_secundaria{
-  overflow: hidden;
+
+.mg1 {
+  flex: 30%;
+  max-width: 30%;
+  float: left;
+  margin:0 4px;
+}
+.mg2 {
+  flex: 30%;
+  max-width: 30%;
+  float: center;
+  margin:0 4px;
+}
+.mg3 {
+  flex: 30%;
+  max-width: 30%;
+  float: left;
+  margin:0 4px;
+}
+.mg4 {
+  flex: 30%;
+  max-width: 30%;
+  float: left;
+  margin:0 4px;
+}
+.mg5 {
+  flex: 30%;
+  max-width: 30%;
+  float: center;
+  margin:0 4px;
+}
+.mg6 {
+  flex: 30%;
+  max-width: 30%;
+  float: left;
+  margin:0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+    background-color: red ;
+  }
+  .menu{
+    transform: translate(-40px, -50px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+    background-color: black ;
+  }
+  .mg1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .mg2 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .mg3 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .mg4 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .mg5 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .mg6 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .pie_pagina {
+  list-style: none;
   padding: 5px 10px;
-  background-color: #d5c75f ;
-}
-div #contenido{
-  margin:10px auto;
-  max-width: 900px;
+  border-radius: 10px;
+  background-color: #C6d5c5 !important;
+  }
+
+  footer{
+  clear: both;
+  overflow: hidden;
+  }
+
+  footer>div:nth-child(2) {
+  float: left;
+  }
+
+  .pagina_pie .title {
+  padding-bottom: 5px;
+  font-weight: bold;
+  }
+
+  li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  }
+
+  .pagina_pie ul {
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding-top: 15px;
+  padding-left: 100px;
+  text-align: left;
+  }
+
+  div #imgprincipal{
+  padding: 5px 10px;
   background-color: #82c3a6;
-}
-.img_principal  #derecha{
-  width: 30%;
-  float: right;
-  background-color: #d5c75f ;
-}
-.img_principal  #centro{
-  width: 30%;
-  float: right;
-  background-color: #d5c75f ;
-}
-.img_principal  #izquierda{
-  width: 30%;
-  float: right;
-  background-color: #d5c75f ;
-}
-.img_secundaria  #derecha{
-  width: 30%;
-  float: right;
-  background-color: #d5c75f ;
-}
-.img_secundaria  #centro{
-  width: 30%;
-  float: right;
-  background-color: #d5c75f ;
-}
-.img_secundaria  #izquierda{
-  width: 30%;
-  float: right;
-  background-color: #d5c75f ;
+  border: 2px solid #02010a;
+  float: center;
+  }
+  div #imgsegundaria{
+  padding: 5px 10px;
+  background-color: #d5c75f  !important;
+  /*border: 1px solid #d5c75f;*/
+  }
+  .menu{
+    transform: translate(-40px, -50px);
+  }
 }
 
-.img_principal img{
-    margin: 10px auto;
-}
-
-.img_secundaria img{
-    margin: 10px auto;
-}
-
-/*APLICACION DE EFECTO A IMAGENES POR COLORES*/
-.img_principal #img1 { filter: blur(10px);}
-.img_principal #img2 {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.img_principal #img3 {
-  -webkit-filter: sepia(90%);
-  -moz-filter: sepia(90%);
-  -ms-filter: sepia(90%);
-  -o-filter: sepia(90%);
-  filter: sepia(90%);
-}
-.img_secundaria #img4 {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.img_secundaria #img6 {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-
-@media screen and (max-width:900px) {
-  /* resolucion mayor a 900px destokp */
-
-}
-@media screen and (min-width:900px) {
-  /* resolucion menor a 900px movil */
-}
-
-.pagina_pie {
+.pie_pagina {
 list-style: none;
-overflow: hidden;
 padding: 5px 10px;
 border-radius: 10px;
 background-color: #C6d5c5 !important;
@@ -180,6 +239,52 @@ padding-left: 100px;
 text-align: left;
 }
 
+div #imgprincipal{
+padding: 5px 10px;
+background-color: #82c3a6;
+border: 2px solid #02010a;
+float: center;
+}
+div #imgsegundaria{
+padding: 5px 10px;
+background-color: #d5c75f  !important;
+border: 1px solid ;
+}
+
+
 .menu{
   transform: translate(-40px, -50px);
+}
+
+
+/*APLICACION DE EFECTO A IMAGENES POR COLORES*/
+.column .mg1 { filter: blur(10px);}
+.column .mg3 {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.column .mg2 {
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+}
+.column .mg4 {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.column .mg5 {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
