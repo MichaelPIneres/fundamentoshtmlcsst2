@@ -129,6 +129,10 @@ h1{
     max-width: 100%;
     background-color: black ;
   }
+  p{
+    text-align: center;
+    color: white !important;
+  }
   .mg1 {
     flex: 100%;
     max-width: 100%;
@@ -287,4 +291,9 @@ border: 1px solid ;
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+p{
+  text-align: right;
+  color: white !important;
 }
